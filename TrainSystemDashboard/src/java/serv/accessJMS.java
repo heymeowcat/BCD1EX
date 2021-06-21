@@ -103,35 +103,35 @@ public class accessJMS {
                             wholeTrainList += "<div class=\"col s12 m12 l12\">\n"
                                     + "                <div class=\"card blue-grey darken-1\">\n"
                                     + "                    <div class=\"card-content white-text\">\n"
-                                    + "                        <span id=\"trainid" + key + "\" class=\"card-title\">Train Id :  "+trainMap.get(key).getTrainid()+"</span>\n"
+                                    + "                        <span id=\"trainid" + key + "\" class=\"card-title\">Train Id :  " + trainMap.get(key).getTrainid() + "</span>\n"
                                     + "                        <div  class=\"row\">\n"
                                     + "                            <div class=\"col s12 m6 l3\">\n"
-                                    + "                                <div class=\"card blue-grey lighten-1\">\n"
+                                    + "                                <div style='cursor: pointer;' onclick=\" window.open('https://www.google.com/maps/search/?api=1&query=" + trainMap.get(key).getLatitude() + " ," + trainMap.get(key).getLongitude() + "');\" class=\"card blue-grey lighten-1\">\n"
                                     + "                                    <span class=\"card-title center-align\">GPS Location</span>\n"
                                     + "                                    <p class=\"center-align\" style=\"font-size: 15px\">Latitude</p>\n"
-                                    + "                                    <p  class=\"center-align\" style=\"font-size: 20px\"><b id=\"latVal" + key + "\">"+trainMap.get(key).getLatitude()+"</b></p>\n"
+                                    + "                                    <p  class=\"center-align\" style=\"font-size: 20px\"><b id=\"latVal" + key + "\">" + trainMap.get(key).getLatitude() + "</b></p>\n"
                                     + "                                    <p class=\"center-align\" style=\"font-size: 15px\">Longitude</p>\n"
-                                    + "                                    <p class=\"center-align\" style=\"font-size: 20px\"><b id=\"lonVal" + key + "\">"+trainMap.get(key).getLongitude()+"</b></p>\n"
+                                    + "                                    <p class=\"center-align\" style=\"font-size: 20px\"><b id=\"lonVal" + key + "\">" + trainMap.get(key).getLongitude() + "</b></p>\n"
                                     + "                                </div>\n"
                                     + "                            </div>\n"
                                     + "                            <div class=\"col s12 m6 l3\">\n"
                                     + "                                <div class=\"card blue-grey lighten-1\">\n"
                                     + "                                    <span class=\"card-title center-align\">Speed</span>\n"
-                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"speedVal" + key + "\">"+trainMap.get(key).getSpeed()+"</b></p>\n"
+                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"speedVal" + key + "\">" + trainMap.get(key).getSpeed() + "</b></p>\n"
                                     + "                                    <p class=\"center-align\" style=\"font-size: 25px\">km/h</p>\n"
                                     + "                                </div>\n"
                                     + "                            </div>\n"
                                     + "                            <div class=\"col s12 m6 l3\">\n"
                                     + "                                <div class=\"card blue-grey lighten-1\">\n"
                                     + "                                    <span class=\"card-title center-align\">Temperature</span>\n"
-                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"tempVal" + key + "\">"+trainMap.get(key).getTemperature()+"</b></p>\n"
+                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"tempVal" + key + "\">" + trainMap.get(key).getTemperature() + "</b></p>\n"
                                     + "                                    <p class=\"center-align\" style=\"font-size: 25px\">°C</p>\n"
                                     + "                                </div>\n"
                                     + "                            </div>\n"
                                     + "                            <div class=\"col s12 m6 l3\">\n"
                                     + "                                <div class=\"card blue-grey lighten-1\">\n"
                                     + "                                    <span class=\"card-title center-align\">Humidity</span>\n"
-                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"HumidityVal" + key + "\">"+trainMap.get(key).getHumidity()+"</b></p>\n"
+                                    + "                                    <p class=\"center-align\" style=\"font-size: 45px\"><b id=\"HumidityVal" + key + "\">" + trainMap.get(key).getHumidity() + "</b></p>\n"
                                     + "                                    <p class=\"center-align\" style=\"font-size: 25px\">kg<sup>-1</sup></p>\n"
                                     + "                                </div>\n"
                                     + "                            </div>\n"
@@ -142,7 +142,7 @@ public class accessJMS {
                                     + "            </div>";
 
                             utilAll.setValue("trainContainer", wholeTrainList);
-                       
+
                         }
                     }
                 }
